@@ -1,0 +1,9 @@
+def p(a,b):
+    if b == 0:
+        return 1
+    elif a == 0:
+        return 0
+    else:
+        a * int( p(a,b-1))
+
+print(p(2,3))
