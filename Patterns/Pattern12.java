@@ -1,12 +1,12 @@
 public class Pattern12 {
 
+//        1 2 3 4 5 6 
+//                5   
+//              4     
+//            3       
+//          2
+//        1 2 3 4 5 6 
 
-//    1 2 3 4 5 6 
-//      2
-//        3       
-//          4     
-//            5   
-//    1 2 3 4 5 6 
 
 
 
@@ -19,14 +19,14 @@ public class Pattern12 {
             if(row>1 && row<n)
             {
             {
-               newrow=row; 
+               newrow=n-(row-1);
             }
             int prev=newrow-1;
             for(int i=0;i<prev;i++)
             {
                 System.out.print("  ");
             }
-            System.out.print(row+" ");
+            System.out.print(newrow+" ");
             int last=n-newrow;
             for(int i=0;i<last;i++)
             {
