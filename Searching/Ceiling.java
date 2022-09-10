@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-//ceiling element is the element which == of smallest greater than the target element//
+//ceiling element is the element which is == target or smallest greater than the target element//
 
 public class Ceiling {
 
