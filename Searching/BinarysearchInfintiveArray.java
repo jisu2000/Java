@@ -27,7 +27,7 @@ class BinarysearchInfiniteArray {
 
         while (target > arr[end]) {
             int temp = end + 1;
-            end = temp + ((end - start) + 1) * 2;
+            end = end+ ((end - start) + 1) * 2;
             start = temp;
 
         }
