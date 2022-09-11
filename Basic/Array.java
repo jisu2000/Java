@@ -1,11 +1,17 @@
 // To represent a cell of display board.
 public class Array {
 
-	private final int row, col;
+	private int row;
+	private int col;
 	private CellType cellType;
 
-	public Cell(int row, int col)
+	public void Cell(int row, int col)
 	{
+		this.row = row;
+		this.col = col;
+	}
+
+	public Array(int row, int col) {
 		this.row = row;
 		this.col = col;
 	}
