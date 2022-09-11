@@ -4,47 +4,40 @@ import java.util.Scanner;
 
 class BinarysearchInfiniteArray {
 
-    static int BinarySrach(int arr[],int target,int start,int end)
-    {
+    static int BinarySrach(int arr[], int target, int start, int end) {
 
-        while(start<=end)
-        {
-            int mid=start+(end-start)/2;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
 
-            if(target<arr[mid])
-            {
-                end=mid-1;
+            if (target < arr[mid]) {
+                end = mid - 1;
 
-            }
-            else if(target>arr[mid])
-            {
-                start=mid+1;
-            }
-            else{
+            } else if (target > arr[mid]) {
+                start = mid + 1;
+            } else {
                 return mid;
             }
         }
         return -1;
     }
 
-    static int ans(int arr[],int target)
-    {
-        int start=0;
-        int end=1;
-        int temp=start;
-        if(target>arr[end])
-        {
-            temp=end+1;
-            end= temp+((end-start)+1)*2+1;
-        }
+    static int ans(int arr[], int target) {
+        int start = 0;
+        int end = 1;
 
-        start=temp;
+        while (target > arr[end]) {
+            int temp = end + 1;
+            end = temp + ((end - start) + 1) * 2;
+            start = temp;
+
+        }
 
         return BinarySrach(arr, target, start, end);
 
     }
+
     public static void main(String[] args) {
-      
+
         System.out.println("Enter the length of the Array");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -59,9 +52,9 @@ class BinarysearchInfiniteArray {
         System.out.println("Enter the Element you want to find");
         int target = sc.nextInt();
 
-        int a= ans(arr, target);
+        int a = ans(arr, target);
 
-        System.out.println(target + " should be in " + a+ " position");
+        System.out.println(target + " should be in " + a + " position");
     }
-    
+
 }
