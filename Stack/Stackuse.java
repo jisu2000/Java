@@ -10,11 +10,13 @@ public class Stackuse {
         
         
 
-        System.out.println(Stack.pop());
-        System.out.println(Stack.pop());
-        System.out.println(Stack.pop());
-        System.out.println(Stack.pop());
-        System.out.println(Stack.pop());
+        // System.out.println(Stack.pop());
+        // System.out.println(Stack.pop());
+        // System.out.println(Stack.pop());
+        // System.out.println(Stack.pop());
+        // System.out.println(Stack.pop());
+
+        System.out.println(Stack.peak());
         
 
 

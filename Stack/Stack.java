@@ -40,7 +40,7 @@ public class Stack {
         return data[ptr--];
     }
 
-    public int peak() {
+    public static int peak() {
         if (isempty()) {
             System.out.println("The Stack is empty");
         }
