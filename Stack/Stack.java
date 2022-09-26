@@ -22,7 +22,7 @@ public class Stack {
         return ptr == -1;
     }
 
-    public static boolean push(int item) {
+    boolean push(int item) {
         
         if (isfull()) {
             System.out.println("The Stack is Full!!");
