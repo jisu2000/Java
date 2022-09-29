@@ -9,11 +9,12 @@ public class DynamicStackUse {
             s.push(arr[i]);
         }
 
-        System.out.println(s.size());
+        System.out.println("The size of the Stack is "+s.size());
 
         for(int i=0;i<arr.length;i++)
         {
-            System.out.println((s.pop()));
+            System.out.println((s.pop())+" : Poped");
+            System.out.println("The Size is now " +s.size());
         }
     }
 }

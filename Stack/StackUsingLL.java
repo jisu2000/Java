@@ -14,7 +14,7 @@ public class StackUsingLL {
 
         while(!stack.isempty())
         {
-            System.out.println("The item poped is " +stack.pop());
+            System.out.println(stack.pop()+" : poped");
             System.out.println("The Size is now "+ stack.size());
         }
      
