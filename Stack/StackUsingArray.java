@@ -21,16 +21,20 @@ public class StackUsingArray {
              System.out.println("STACK is Full!!");
             
         }
-    data[++topind]=element;
+        else{
+        data[++topind]=element;
+        }
     }
     public int pop(){
         if(isempty())
         {
             System.out.println("STACK is Empty!!");
         }
+        
         int temp=data[topind];
         topind--;
         return temp;
+        
 
     }
     public int top(){
