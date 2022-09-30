@@ -14,6 +14,7 @@ public class DynamicStackUse {
         for(int i=0;i<arr.length;i++)
         {
             System.out.println((s.pop())+" : Poped");
+            System.out.println(s.top()+ " : Top");
             System.out.println("The Size is now " +s.size());
         }
     }

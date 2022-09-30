@@ -15,6 +15,7 @@ public class StackUsingLL {
         while(!stack.isempty())
         {
             System.out.println(stack.pop()+" : poped");
+            System.out.println(stack.top()+ " : Top");
             System.out.println("The Size is now "+ stack.size());
         }
      
