@@ -37,7 +37,7 @@ public class DynamicStack {
 
     public int top() {
         if (isempty()) {
-            System.out.println("The Array is Empty");
+            System.out.println("The Stack is Empty");
         }
         return data[topindex];
     }
