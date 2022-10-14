@@ -41,7 +41,7 @@ public class Queue_Arr {
         data[rear]=elem;
         size++;
     }
-    public int dequeue() throws QueueEmptyError{
+    public void dequeue() throws QueueEmptyError{
         if(size==0){
             throw new QueueEmptyError();
         }
@@ -54,7 +54,7 @@ public class Queue_Arr {
             front=-1;
             rear=-1;
         }
-        return temp;
+     System.out.println(temp);
         
     }
 }
