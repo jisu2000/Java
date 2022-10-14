@@ -8,6 +8,7 @@ public class Queue_Arr {
         data=new int[cap];
         front=-1;
         rear=-1;
+        size=0;
     }
     public int size(){
         return size;
@@ -18,7 +19,7 @@ public class Queue_Arr {
     }
 
     public int peek() throws QueueEmptyError{
-        if(size==0)
+        if(isEmpty())
         {
             throw new QueueEmptyError();
         }
@@ -35,7 +36,7 @@ public class Queue_Arr {
         if(size==0){
             front=0;
         }
-        rear++;
+        rear=(rear+1)%data.length;
 
         data[rear]=elem;
         size++;
@@ -46,12 +47,14 @@ public class Queue_Arr {
         }
     
         int temp=data[front];
-        front++;
+        
+        front=(front+1)%data.length;
         size--;
         if(size==0){
             front=-1;
             rear=-1;
         }
         return temp;
+        
     }
 }
