@@ -27,7 +27,7 @@ public class Collection{
 
         while(!q.isEmpty())
         {
-            System.out.println("Removing "+q.poll());
+            System.out.println("Removing "+q.poll()+" Current Size is "+q.size());
         }
         
 
