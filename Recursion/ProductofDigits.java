@@ -1,12 +1,12 @@
 public class ProductofDigits {
     public static void main(String[] args) {
-        int ans = getproduct(507);
+        int ans = getproduct(57);
         System.out.println(ans);
     }
 
     static int getproduct(int num) {
 
-        if (num % 10 == num) {
+        if (num /10 == 0) {
             return num;
         }
 
