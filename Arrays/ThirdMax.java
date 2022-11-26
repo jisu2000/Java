@@ -3,9 +3,6 @@ import java.util.*;
 public class ThirdMax {
     public static int thirdMax(int[] nums) {
 
-        if (nums.length <= 3) {
-            return nums[nums.length - 1];
-        }
         ArrayList<Integer> list = new ArrayList<>();
         list = remove(nums);
         Collections.sort(list);
