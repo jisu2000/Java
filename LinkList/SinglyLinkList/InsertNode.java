@@ -46,7 +46,7 @@ public class InsertNode {
         if (pos == 0) {
             newNode.next = head;
             head = newNode;
-            return newNode;
+            return head;
         }
         Node<Integer> temp = head;
         while (i < pos - 1) {
